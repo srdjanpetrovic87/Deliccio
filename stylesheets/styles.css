@@ -368,8 +368,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1449746212);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1449746212#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1449746212) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1449746212) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1449746212#glyphicons_halflingsregular) format("svg");
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1448026094);
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1448026094#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1448026094) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1448026094) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1448026094) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1448026094#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -8772,7 +8772,7 @@ button.close {
 }
 /* line 1, ../sass/_config.scss */
 .container-fluid {
-  max-width: 960px;
+  max-width: 990px;
 }
 
 /* line 4, ../sass/_config.scss */
@@ -8785,38 +8785,59 @@ button.close {
   background: url("../images/header-bgnd.jpg") no-repeat 50% 0;
 }
 
-/* line 2, ../sass/_header.scss */
+/* line 1, ../sass/_typography.scss */
+h1 {
+  font-family: "Forum", cursive;
+  font-size: 53px;
+  line-height: 53px;
+  color: #bf0f0a;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  text-align: center;
+  margin: 50px 0 10px 0;
+}
+/* line 10, ../sass/_typography.scss */
+h1 span {
+  display: block;
+  font-size: 27px;
+  line-height: 44px;
+  color: #312826;
+  letter-spacing: -1px;
+  margin: 10px 0 0 0;
+}
+
+/* line 2, ../sass/modules/_header.scss */
 .navbar {
   border: none;
   margin-bottom: 0;
 }
 
-/* line 6, ../sass/_header.scss */
+/* line 6, ../sass/modules/_header.scss */
 .navbar-default {
   background-color: transparent;
   padding-top: 15px;
 }
 
-/* line 10, ../sass/_header.scss */
+/* line 10, ../sass/modules/_header.scss */
 .navbar-brand {
   height: auto;
 }
 
-/* line 13, ../sass/_header.scss */
+/* line 13, ../sass/modules/_header.scss */
 .navbar-nav {
   margin-top: 60px;
 }
 
-/* line 16, ../sass/_header.scss */
+/* line 16, ../sass/modules/_header.scss */
 .navbar-default .navbar-nav > li {
   margin-right: 3px;
 }
-/* line 18, ../sass/_header.scss */
+/* line 18, ../sass/modules/_header.scss */
 .navbar-default .navbar-nav > li:last-child {
   margin: 0;
 }
 
-/* line 22, ../sass/_header.scss */
+/* line 22, ../sass/modules/_header.scss */
 .navbar-default .navbar-nav > li > a {
   font-family: "Forum", cursive;
   font-size: 24px;
@@ -8825,14 +8846,14 @@ button.close {
   padding: 0 15px;
 }
 
-/* line 29, ../sass/_header.scss */
+/* line 29, ../sass/modules/_header.scss */
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #faf3ed;
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 34, ../sass/_header.scss */
+/* line 34, ../sass/modules/_header.scss */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -8840,44 +8861,94 @@ button.close {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 40, ../sass/_header.scss */
+/* line 40, ../sass/modules/_header.scss */
 .header-icons {
   position: absolute;
   right: 40px;
   top: 30px;
 }
-/* line 44, ../sass/_header.scss */
+/* line 44, ../sass/modules/_header.scss */
 .header-icons ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 49, ../sass/_header.scss */
+/* line 49, ../sass/modules/_header.scss */
 .header-icons li {
   float: left;
   padding: 0 15px;
   border-right: 1px solid #a80002;
 }
-/* line 53, ../sass/_header.scss */
+/* line 53, ../sass/modules/_header.scss */
 .header-icons li a {
   text-indent: -99999em;
   display: block;
   width: 15px;
   height: 13px;
 }
-/* line 59, ../sass/_header.scss */
+/* line 59, ../sass/modules/_header.scss */
 .header-icons li:first-child a {
   background: url("../images/icon-1.gif") no-repeat;
 }
-/* line 62, ../sass/_header.scss */
+/* line 62, ../sass/modules/_header.scss */
 .header-icons li:nth-child(2) a {
   background: url("../images/icon-2.gif") no-repeat;
 }
-/* line 65, ../sass/_header.scss */
+/* line 65, ../sass/modules/_header.scss */
 .header-icons li:last-child {
   border: 0;
 }
-/* line 67, ../sass/_header.scss */
+/* line 67, ../sass/modules/_header.scss */
 .header-icons li:last-child a {
   background: url("../images/icon-3.gif") no-repeat;
+}
+
+/* line 1, ../sass/modules/_carousel.scss */
+.intro-carousel {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background: url("../images/slider-bgnd.jpg") no-repeat 0 0;
+  margin: 0 0 20px 0;
+}
+
+/* line 11, ../sass/modules/_carousel.scss */
+.intro-carousel-description {
+  width: 34%;
+  float: left;
+}
+/* line 14, ../sass/modules/_carousel.scss */
+.intro-carousel-description blockquote {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #6c5f5b;
+  padding: 0 20px;
+  border: 0;
+  margin: 0;
+  position: relative;
+}
+/* line 25, ../sass/modules/_carousel.scss */
+.intro-carousel-description blockquote:before {
+  content: open-quote;
+  font-size: 44px;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+/* line 32, ../sass/modules/_carousel.scss */
+.intro-carousel-description blockquote:after {
+  content: close-quote;
+  font-size: 44px;
+  margin-top: 20px;
+  position: absolute;
+  right: 20px;
+  bottom: -15px;
+}
+
+/* line 41, ../sass/modules/_carousel.scss */
+.intro-carousel-image {
+  width: 66%;
+  float: left;
 }

@@ -1,0 +1,44 @@
+.intro-carousel {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background: url("../images/slider-bgnd.jpg") no-repeat 0 0;
+  margin: 0 0 20px 0;
+}
+.intro-carousel-box {
+
+}
+.intro-carousel-description {
+  width: 34%;
+  float: left;
+  blockquote {
+    font-family: $georgia;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: $gray-dark;
+    padding: 0 20px;
+    border: 0;
+    margin: 0;
+    position: relative;
+  }
+  blockquote:before {
+    content: open-quote;
+    font-size: 44px;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+  }
+  blockquote:after {
+    content: close-quote;
+    font-size: 44px;
+    margin-top: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: -15px;
+  }
+}
+.intro-carousel-image {
+  width: 66%;
+  float: left;
+}

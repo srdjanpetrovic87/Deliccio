@@ -9,6 +9,8 @@
   STLESHEETS
   =================================================================-->
   <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/owl.carousel.css">
+  <link rel="stylesheet" href="stylesheets/owl.theme.css">
 
 </head>
 <body>
@@ -55,17 +57,61 @@
               </nav>
             </header>
 
-            <div class="carousel">
+            <div class="intro-carousel">
+              <div id="owl-example" class="owl-carousel">
+                <div class="item">
+                  <div class="intro-carousel-box clearfix">
+                    <div class="intro-carousel-description">
+                      <h1>Italian Fettuccine<span>Dish of the Day</span></h1>
+                      <blockquote>Lorem ipsum dolamet consectetur adipisicing elit, sed do eiusmod tempor aliqua enim ad minim veniam, quis nosinci-<wbr>didunt ut labore et dolore.</blockquote>
+                    </div>
+                    <div class="intro-carousel-image">
+                      <img src="images/carousel-img-1.jpg" alt="Slider image" class="img-responsive">
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="intro-carousel-box clearfix">
+                    <div class="intro-carousel-description">
+                      <h1>Succulent Meat<span>Dish of the Day</span></h1>
+                      <blockquote>Lorem ipsum dolamet consectetur adipisicing elit, sed do eiusmod tempor aliqua enim ad minim veniam, quis nosincididunt ut labore et dolore.</blockquote>
+                    </div>
+                    <div class="intro-carousel-image">
+                      <img src="images/carousel-img-2.jpg" alt="Slider image" class="img-responsive">
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="intro-carousel-box clearfix">
+                    <div class="intro-carousel-description">
+                      <h1>French-Style Tartlet<span>Dish of the Day</span></h1>
+                      <blockquote>Lorem ipsum dolamet consectetur adipisicing elit, sed do eiusmod tempor aliqua enim ad minim veniam, quis nosincididunt ut labore et dolore.</blockquote>
+                    </div>
+                    <div class="intro-carousel-image">
+                      <img src="images/carousel-img-3.jpg" alt="Slider image" class="img-responsive">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-          </div>
-        </div>
-      </div>
+          </div> <!-- .cols ends -->
+        </div> <!-- .row ends -->
+      </div> <!-- .container-fluid ends -->
     
-    </div>
-  </div>
+    </div> <!-- .top-convincer ends -->
+  </div> <!-- .top-convincer-wrap ends -->
 
   <script src="javascripts/jquery-1.11.3.min.js"></script>
   <script src="javascripts/bootstrap.min.js"></script>
+  <script src="javascripts/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#owl-example").owlCarousel({
+        navigation: false,
+        singleItem: true
+      });
+    });
+  </script>
 </body>
 </html>
