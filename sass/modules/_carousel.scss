@@ -3,10 +3,10 @@
   height: auto;
   padding: 10px;
   background: url("../images/slider-bgnd.jpg") no-repeat 0 0;
-  margin: 0 0 20px 0;
-}
-.intro-carousel-box {
-
+  margin: 0 0 35px 0;
+  -webkit-box-shadow: 0px 20px 16px -16px rgba(0,0,0,0.65);
+  -moz-box-shadow: 0px 20px 16px -16px rgba(0,0,0,0.65);
+  box-shadow: 0px 20px 16px -16px rgba(0,0,0,0.65);
 }
 .intro-carousel-description {
   width: 34%;

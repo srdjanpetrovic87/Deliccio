@@ -8777,7 +8777,7 @@ button.close {
 
 /* line 4, ../sass/_config.scss */
 .top-convincer-wrap {
-  background: url("../images/header-bgnd-repeat.jpg") repeat-x 0 0;
+  background: url("../images/header-bgnd-repeat.jpg") repeat 0 0;
 }
 
 /* line 7, ../sass/_config.scss */
@@ -8790,7 +8790,7 @@ h1 {
   font-family: "Forum", cursive;
   font-size: 53px;
   line-height: 53px;
-  color: #bf0f0a;
+  color: #c53005;
   text-transform: uppercase;
   letter-spacing: -2px;
   text-align: center;
@@ -8806,6 +8806,68 @@ h1 span {
   margin: 10px 0 0 0;
 }
 
+/* line 19, ../sass/_typography.scss */
+h3 {
+  font-family: "Forum", cursive;
+  font-size: 38px;
+  line-height: 45px;
+  color: #a80002;
+  margin: 5px 0 15px;
+  letter-spacing: -2px;
+}
+/* line 26, ../sass/_typography.scss */
+h3 span {
+  color: #faf3ed;
+}
+
+/* line 30, ../sass/_typography.scss */
+p {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #faf3ed;
+  font-weight: normal;
+  margin: 0 0 14px 0;
+}
+
+/* line 38, ../sass/_typography.scss */
+a.read-more {
+  display: block;
+  width: 135px;
+  height: 35px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+  background: #a80002;
+  color: #faf3ed;
+  text-decoration: none;
+  margin: 0 0 10px 0;
+}
+/* line 50, ../sass/_typography.scss */
+a.read-more:hover, a.read-more:focus {
+  background: #bf0f0a;
+}
+
+/* line 55, ../sass/_typography.scss */
+a.proposal {
+  display: block;
+  width: 170px;
+  height: 35px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+  background: #a80002;
+  color: #faf3ed;
+  text-decoration: none;
+  margin: 0 0 10px 0;
+}
+/* line 67, ../sass/_typography.scss */
+a.proposal:hover, a.proposal:focus {
+  background: #bf0f0a;
+}
+
 /* line 2, ../sass/modules/_header.scss */
 .navbar {
   border: none;
@@ -8815,7 +8877,7 @@ h1 span {
 /* line 6, ../sass/modules/_header.scss */
 .navbar-default {
   background-color: transparent;
-  padding-top: 15px;
+  padding: 15px 0 5px;
 }
 
 /* line 10, ../sass/modules/_header.scss */
@@ -8909,7 +8971,10 @@ h1 span {
   height: auto;
   padding: 10px;
   background: url("../images/slider-bgnd.jpg") no-repeat 0 0;
-  margin: 0 0 20px 0;
+  margin: 0 0 35px 0;
+  -webkit-box-shadow: 0px 20px 16px -16px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 20px 16px -16px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 20px 16px -16px rgba(0, 0, 0, 0.65);
 }
 
 /* line 11, ../sass/modules/_carousel.scss */
@@ -8951,4 +9016,40 @@ h1 span {
 .intro-carousel-image {
   width: 66%;
   float: left;
+}
+
+/* line 1, ../sass/modules/_intro-box.scss */
+.intro-box {
+  padding: 0 30px 20px;
+  border-top: 10px solid rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.55);
+  margin: 0 0 40px 0;
+}
+/* line 6, ../sass/modules/_intro-box.scss */
+.intro-box img {
+  margin: 0 0 15px 0;
+}
+/* line 10, ../sass/modules/_intro-box.scss */
+.intro-box p a {
+  color: #a80002;
+  text-decoration: none;
+}
+/* line 13, ../sass/modules/_intro-box.scss */
+.intro-box p a:hover, .intro-box p a:focus {
+  text-decoration: underline;
+}
+/* line 18, ../sass/modules/_intro-box.scss */
+.intro-box p span {
+  display: block;
+  font-weight: bold;
+}
+/* line 23, ../sass/modules/_intro-box.scss */
+.intro-box ul {
+  list-style-position: inside;
+  padding: 0;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #faf3ed;
+  font-style: italic;
 }

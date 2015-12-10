@@ -16,3 +16,56 @@ h1 {
     margin: 10px 0 0 0;
   }
 }
+h3 {
+  font-family: $forum;
+  font-size: 38px;
+  line-height: 45px;
+  color: $red;
+  margin: 5px 0 15px;
+  letter-spacing: -2px;
+  span {
+    color: $gray-light;
+  }
+}
+p {
+  font-family: $georgia;
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray-light;
+  font-weight: normal;
+  margin: 0 0 14px 0;
+}
+a.read-more {
+  display: block;
+  width: 135px;
+  height: 35px;
+  font-family: $georgia;
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+  background: $red;
+  color: $gray-light;
+  text-decoration: none;
+  margin: 0 0 10px 0;
+  &:hover,
+  &:focus {
+    background: $red-light;
+  }
+}
+a.proposal {
+  display: block;
+  width: 170px;
+  height: 35px;
+  font-family: $georgia;
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+  background: $red;
+  color: $gray-light;
+  text-decoration: none;
+  margin: 0 0 10px 0;
+  &:hover,
+  &:focus {
+    background: $red-light;
+  }
+}
