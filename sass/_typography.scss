@@ -16,6 +16,14 @@ h1 {
     margin: 10px 0 0 0;
   }
 }
+h2 {
+  font-family: $forum;
+  font-size: 41px;
+  line-height: 45px;
+  color: $red-darker;
+  letter-spacing: -2px;
+  margin:0 0 20px 0;
+}
 h3 {
   font-family: $forum;
   font-size: 38px;
@@ -27,12 +35,11 @@ h3 {
     color: $gray-light;
   }
 }
+h6 {
+  color: $red;
+  margin: 0 0 14px 0;
+}
 p {
-  font-family: $georgia;
-  font-size: 14px;
-  line-height: 24px;
-  color: $gray-light;
-  font-weight: normal;
   margin: 0 0 14px 0;
 }
 a.read-more {

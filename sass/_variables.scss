@@ -1,7 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Forum);
+@font-face {
+  font-family: 'tr_koala_plain';
+  src: url('../fonts/tr_koala_plain-webfont.eot');
+  src: url('../fonts/tr_koala_plain-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/tr_koala_plain-webfont.woff2') format('woff2'),
+       url('../fonts/tr_koala_plain-webfont.woff') format('woff'),
+       url('../fonts/tr_koala_plain-webfont.ttf') format('truetype'),
+       url('../fonts/tr_koala_plain-webfont.svg#tr_koala_plain') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 $forum: 'Forum', cursive;
 $georgia: Georgia, Times, 'Times New Roman', serif;
+$koala: 'tr_koala_plain', cursive;
 
 $gray-light: #faf3ed;
 $gray-dark: #6c5f5b;
@@ -10,4 +23,5 @@ $gray-darker: #312826;
 $red-lighter: #c53005;
 $red-light: #bf0f0a;
 $red: #a80002;
-$red-dark: #200000;
+$red-dark: #220000;
+$red-darker: #200000;
