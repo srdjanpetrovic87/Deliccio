@@ -2,15 +2,7 @@
   padding: 20px;
   background: $gray-light;
   color: $red-darker;
-  .content-box {
-    padding-left: 45px;
-    margin-left: -15px;
-  }
-  .content-border-box {
-    padding-left: 45px;
-    margin: 0 0 0 -15px;
-    border-left: 1px solid #e1dad5;
-  }
+  
   .event-box {
     @include clearfix();
     margin-bottom: 40px;
