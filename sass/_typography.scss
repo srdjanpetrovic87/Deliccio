@@ -18,7 +18,7 @@ h1 {
 }
 h2 {
   font-family: $forum;
-  font-size: 41px;
+  font-size: 40px;
   line-height: 45px;
   color: $red-darker;
   letter-spacing: -2px;
@@ -26,11 +26,11 @@ h2 {
 }
 h3 {
   font-family: $forum;
-  font-size: 38px;
+  font-size: 36px;
   line-height: 45px;
   color: $red;
   margin: 5px 0 15px;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   span {
     color: $gray-light;
   }

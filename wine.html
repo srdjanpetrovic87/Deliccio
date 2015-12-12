@@ -9,6 +9,7 @@
   STLESHEETS
   =================================================================-->
   <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/animate.css">
 
 </head>
 <body>
@@ -35,9 +36,9 @@
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="main-navigation">
                     <ul class="nav navbar-nav navbar-right">
-                      <li class="active"><a href="index.html">Restaurant <span class="sr-only">(current)</span></a></li>
+                      <li><a href="index.html">Restaurant <span class="sr-only">(current)</span></a></li>
                       <li><a href="cuisine.html">Cuisine</a></li>
-                      <li><a href="wine.html">Wine List</a></li>
+                      <li class="active"><a href="wine.html">Wine List</a></li>
                       <li><a href="cook.html">CookBook</a></li>
                       <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -56,7 +57,7 @@
         </div> <!-- .row ends -->
         <div class="row">
           <div class="col-md-4">
-            <div class="intro-box">
+            <div class="intro-box wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
               <h3>Wine <span>Accessories</span></h3>
               <img src="images/wine-img1.jpg" alt="intro-box" class="img-responsive">
               <p>Neque porro quisquam est, qui dolorem ipsum qudolor sitamet consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt.</p>
@@ -64,7 +65,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="intro-box">
+            <div class="intro-box wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
               <h3>Wine <span>Pairing</span></h3>
               <img src="images/wine-img2.jpg" alt="intro-box" class="img-responsive">
               <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
@@ -72,7 +73,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="intro-box">
+            <div class="intro-box wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
               <h3>Exclusive <span>Wines</span></h3>
               <img src="images/wine-img3.jpg" alt="intro-box" class="img-responsive">
               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.</p>
@@ -88,8 +89,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-4">
-          <div class="content-box">
-            <h2>Alcohol Delivery</h2>
+          <h2>Alcohol Delivery</h2>
+          <div class="content-box separator wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
             <div class="offer-box">
               <img src="images/wine-img4.jpg" alt="offer image" class="img-responsive">
               <p>Lorem ipsum dolor sit amet, consecte-<wbr>tur adipisicing elit, sed do eiusmod tempor incididunt.</p>
@@ -97,12 +98,10 @@
           </div>
         </div>
         <div class="col-sm-8">
-          <div class="content-box">
-            <h2>Our Wine List</h2>
-          </div>
+          <h2>Our Wine List</h2>
           <div class="row">
             <div class="col-sm-6">
-              <div class="content-border-box">
+              <div class="content-box separator wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                 <div class="offer-box">
                   <ul>
                     <li><span class="wine-title">Sed ut perspiciatis unde</span> <span class="wine-price">$15</span></li>
@@ -118,7 +117,7 @@
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="content-border-box">
+              <div class="content-box wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                 <div class="offer-box">
                   <ul>
                     <li><span class="wine-title">Sed ut perspiciatis unde</span> <span class="wine-price">$15</span></li>
@@ -143,13 +142,13 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-8">
-          <div class="content-box">
+          <div class="footer-box">
             <h4>Toll Free: <span>1-800 123 45 67</span></h4>
             <p><a href="#">Website Template</a> by TemplateMonster.com</p>
           </div>
         </div>
         <div class="col-xs-4">
-          <div class="content-box">
+          <div class="footer-box">
             <h4>Follow Us</h4>
             <ul>
               <li><a href="#">facebook</a></li>
@@ -166,5 +165,7 @@
 
   <script src="javascripts/jquery-1.11.3.min.js"></script>
   <script src="javascripts/bootstrap.min.js"></script>
+  <script src="javascripts/wow.js"></script>
+  <script src="javascripts/app.js"></script>
 </body>
 </html>

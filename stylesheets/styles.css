@@ -8801,19 +8801,6 @@ body {
   color: #eeeeee;
 }
 
-/* line 17, ../sass/_config.scss */
-.content-box {
-  padding-left: 45px;
-  margin-left: -15px;
-}
-
-/* line 21, ../sass/_config.scss */
-.content-border-box {
-  padding-left: 45px;
-  margin-left: -15px;
-  border-left: 1px solid #e1dad5;
-}
-
 /* line 1, ../sass/_typography.scss */
 h1 {
   font-family: "Forum", cursive;
@@ -8838,7 +8825,7 @@ h1 span {
 /* line 19, ../sass/_typography.scss */
 h2 {
   font-family: "Forum", cursive;
-  font-size: 41px;
+  font-size: 40px;
   line-height: 45px;
   color: #200000;
   letter-spacing: -2px;
@@ -8848,11 +8835,11 @@ h2 {
 /* line 27, ../sass/_typography.scss */
 h3 {
   font-family: "Forum", cursive;
-  font-size: 38px;
+  font-size: 36px;
   line-height: 45px;
   color: #a80002;
   margin: 5px 0 15px;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
 /* line 34, ../sass/_typography.scss */
 h3 span {
@@ -9115,8 +9102,21 @@ a.proposal:hover, a.proposal:focus {
   color: #200000;
 }
 /* line 6, ../sass/modules/_content.scss */
+.content-convincer h2 {
+  padding: 0 0 0 30px;
+}
+/* line 9, ../sass/modules/_content.scss */
+.content-convincer .content-box {
+  padding: 0 45px;
+  margin: 0 -15px;
+}
+/* line 13, ../sass/modules/_content.scss */
+.content-convincer .separator {
+  border-right: 1px solid #e1dad5;
+}
+/* line 17, ../sass/modules/_content.scss */
 .content-convincer .event-box {
-  margin-bottom: 40px;
+  margin: 0 -30px 40px 0;
 }
 /* line 14, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 .content-convincer .event-box:before, .content-convincer .event-box:after {
@@ -9127,20 +9127,19 @@ a.proposal:hover, a.proposal:focus {
 .content-convincer .event-box:after {
   clear: both;
 }
-/* line 9, ../sass/modules/_content.scss */
+/* line 20, ../sass/modules/_content.scss */
 .content-convincer .event-box img {
   float: left;
 }
-/* line 12, ../sass/modules/_content.scss */
+/* line 23, ../sass/modules/_content.scss */
 .content-convincer .event-box h6 {
   margin: 0 0 0 122px;
 }
-/* line 15, ../sass/modules/_content.scss */
+/* line 26, ../sass/modules/_content.scss */
 .content-convincer .event-box p {
-  padding: 0 10px 0 0;
   margin: 0 0 0 122px;
 }
-/* line 20, ../sass/modules/_content.scss */
+/* line 31, ../sass/modules/_content.scss */
 .content-convincer .testimonial-box {
   margin-bottom: 15px;
 }
@@ -9153,14 +9152,13 @@ a.proposal:hover, a.proposal:focus {
 .content-convincer .testimonial-box:after {
   clear: both;
 }
-/* line 23, ../sass/modules/_content.scss */
+/* line 34, ../sass/modules/_content.scss */
 .content-convincer .testimonial-box p {
   margin: 0 0 0 60px;
 }
-/* line 26, ../sass/modules/_content.scss */
+/* line 37, ../sass/modules/_content.scss */
 .content-convincer .testimonial-box .testimonial-number {
   width: 40px;
-  font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
   line-height: 40px;
   background: #a80002;
@@ -9168,34 +9166,34 @@ a.proposal:hover, a.proposal:focus {
   text-align: center;
   float: left;
 }
-/* line 36, ../sass/modules/_content.scss */
+/* line 46, ../sass/modules/_content.scss */
 .content-convincer .testimonial-box .testimonial-signature {
   font-family: "tr_koala_plain", cursive;
   font-size: 24px;
   line-height: 24px;
   color: #220000;
 }
-/* line 44, ../sass/modules/_content.scss */
+/* line 54, ../sass/modules/_content.scss */
+.content-convincer .offer-box {
+  padding: 10px 0 0 0;
+}
+/* line 56, ../sass/modules/_content.scss */
 .content-convincer .offer-box img {
-  margin: 0 0 15px;
+  margin: 0 0 15px 0;
 }
-/* line 47, ../sass/modules/_content.scss */
-.content-convincer .offer-box p {
-  max-width: 240px;
-}
-/* line 50, ../sass/modules/_content.scss */
+/* line 59, ../sass/modules/_content.scss */
 .content-convincer .offer-box ul {
   list-style-type: none;
-  padding: 0 30px 0 0;
-  margin: 0 0 14px 0;
+  padding: 0 30px 5px 0;
+  margin: -10px 0 14px 0;
 }
-/* line 54, ../sass/modules/_content.scss */
+/* line 63, ../sass/modules/_content.scss */
 .content-convincer .offer-box ul li {
   position: relative;
   height: 24px;
   border-bottom: 1px dotted #220000;
 }
-/* line 57, ../sass/modules/_content.scss */
+/* line 67, ../sass/modules/_content.scss */
 .content-convincer .offer-box ul li span.wine-title {
   position: absolute;
   top: 5px;
@@ -9207,7 +9205,7 @@ a.proposal:hover, a.proposal:focus {
   background-repeat: no-repeat;
   background-position: 0 10px;
 }
-/* line 68, ../sass/modules/_content.scss */
+/* line 78, ../sass/modules/_content.scss */
 .content-convincer .offer-box ul li span.wine-price {
   position: absolute;
   top: 5px;
@@ -9215,9 +9213,10 @@ a.proposal:hover, a.proposal:focus {
   background: #faf3ed;
   z-index: 10;
 }
-/* line 79, ../sass/modules/_content.scss */
+/* line 89, ../sass/modules/_content.scss */
 .content-convincer .cook-recipe-box {
-  margin-bottom: 20px;
+  padding: 10px 0 0 0;
+  margin: 0 0 10px 0;
 }
 /* line 14, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 .content-convincer .cook-recipe-box:before, .content-convincer .cook-recipe-box:after {
@@ -9228,26 +9227,25 @@ a.proposal:hover, a.proposal:focus {
 .content-convincer .cook-recipe-box:after {
   clear: both;
 }
-/* line 82, ../sass/modules/_content.scss */
+/* line 93, ../sass/modules/_content.scss */
 .content-convincer .cook-recipe-box img {
   float: left;
 }
-/* line 85, ../sass/modules/_content.scss */
+/* line 96, ../sass/modules/_content.scss */
 .content-convincer .cook-recipe-box h6 {
   margin: 0 0 0 160px;
 }
-/* line 88, ../sass/modules/_content.scss */
+/* line 99, ../sass/modules/_content.scss */
 .content-convincer .cook-recipe-box p {
-  padding: 0 10px 0 0;
   margin: 0 0 0 160px;
 }
-/* line 94, ../sass/modules/_content.scss */
-.content-convincer table a {
+/* line 105, ../sass/modules/_content.scss */
+.content-convincer table.contact-info a {
   color: #a80002;
   text-decoration: none;
 }
-/* line 97, ../sass/modules/_content.scss */
-.content-convincer table a:hover, .content-convincer table a:focus {
+/* line 108, ../sass/modules/_content.scss */
+.content-convincer table.contact-info a:hover, .content-convincer table.contact-info a:focus {
   text-decoration: underline;
 }
 
@@ -9256,16 +9254,21 @@ a.proposal:hover, a.proposal:focus {
   padding: 30px 0;
   background: url("../images/bg_bot.jpg");
 }
-/* line 4, ../sass/modules/_footer.scss */
+/* line 5, ../sass/modules/_footer.scss */
+.footer .footer-box {
+  padding: 0 45px;
+  margin: 0 -15px;
+}
+/* line 10, ../sass/modules/_footer.scss */
 .footer p {
   color: #696969;
 }
-/* line 6, ../sass/modules/_footer.scss */
+/* line 12, ../sass/modules/_footer.scss */
 .footer p a {
   color: #c53005;
   text-decoration: underline;
 }
-/* line 12, ../sass/modules/_footer.scss */
+/* line 18, ../sass/modules/_footer.scss */
 .footer ul {
   list-style: none;
   padding: 0;
@@ -9279,16 +9282,16 @@ a.proposal:hover, a.proposal:focus {
 .footer ul:after {
   clear: both;
 }
-/* line 16, ../sass/modules/_footer.scss */
+/* line 22, ../sass/modules/_footer.scss */
 .footer ul li {
   float: left;
   margin: 0 10px 0 0;
 }
-/* line 19, ../sass/modules/_footer.scss */
+/* line 25, ../sass/modules/_footer.scss */
 .footer ul li:last-child {
   margin: 0;
 }
-/* line 22, ../sass/modules/_footer.scss */
+/* line 28, ../sass/modules/_footer.scss */
 .footer ul li a {
   display: block;
   width: 31px;
@@ -9299,43 +9302,43 @@ a.proposal:hover, a.proposal:focus {
   -o-transition: all, 0.35s;
   transition: all, 0.35s;
 }
-/* line 30, ../sass/modules/_footer.scss */
+/* line 36, ../sass/modules/_footer.scss */
 .footer ul li:first-child a {
   background-position: 0 0;
 }
-/* line 32, ../sass/modules/_footer.scss */
+/* line 38, ../sass/modules/_footer.scss */
 .footer ul li:first-child a:hover, .footer ul li:first-child a:focus {
   background-position: 0 -31px;
 }
-/* line 37, ../sass/modules/_footer.scss */
+/* line 43, ../sass/modules/_footer.scss */
 .footer ul li:nth-child(2) a {
   background-position: -40px 0;
 }
-/* line 39, ../sass/modules/_footer.scss */
+/* line 45, ../sass/modules/_footer.scss */
 .footer ul li:nth-child(2) a:hover, .footer ul li:nth-child(2) a:focus {
   background-position: -40px -31px;
 }
-/* line 44, ../sass/modules/_footer.scss */
+/* line 50, ../sass/modules/_footer.scss */
 .footer ul li:nth-child(3) a {
   background-position: -80px 0;
 }
-/* line 46, ../sass/modules/_footer.scss */
+/* line 52, ../sass/modules/_footer.scss */
 .footer ul li:nth-child(3) a:hover, .footer ul li:nth-child(3) a:focus {
   background-position: -80px -31px;
 }
-/* line 51, ../sass/modules/_footer.scss */
+/* line 57, ../sass/modules/_footer.scss */
 .footer ul li:nth-child(4) a {
   background-position: -120px 0;
 }
-/* line 53, ../sass/modules/_footer.scss */
+/* line 59, ../sass/modules/_footer.scss */
 .footer ul li:nth-child(4) a:hover, .footer ul li:nth-child(4) a:focus {
   background-position: -120px -31px;
 }
-/* line 58, ../sass/modules/_footer.scss */
+/* line 64, ../sass/modules/_footer.scss */
 .footer ul li:last-child a {
   background-position: -160px 0;
 }
-/* line 60, ../sass/modules/_footer.scss */
+/* line 66, ../sass/modules/_footer.scss */
 .footer ul li:last-child a:hover, .footer ul li:last-child a:focus {
   background-position: -160px -31px;
 }

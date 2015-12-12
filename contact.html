@@ -9,6 +9,7 @@
   STLESHEETS
   =================================================================-->
   <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/animate.css">
 
 </head>
 <body>
@@ -36,11 +37,11 @@
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="main-navigation">
                     <ul class="nav navbar-nav navbar-right">
-                      <li class="active"><a href="index.html">Restaurant <span class="sr-only">(current)</span></a></li>
+                      <li><a href="index.html">Restaurant</a></li>
                       <li><a href="cuisine.html">Cuisine</a></li>
                       <li><a href="wine.html">Wine List</a></li>
                       <li><a href="cook.html">CookBook</a></li>
-                      <li><a href="contact.html">Contact</a></li>
+                      <li class="active"><a href="contact.html">Contact</a></li>
                     </ul>
                   </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -64,12 +65,10 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-4">
-          <div class="content-box">
-            <h2>Our Contacts</h2>
-          </div>
-          <div class="content-box">
+          <h2>Our Contacts</h2>
+          <div class="content-box separator wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
             <p>Sed ut perspiciatis unde omnis iunatus doloremque laudantium.</p>
-            <table>
+            <table class="contact-info">
               <tr>
                 <td colspan="2">Marmora Road, Glasgow, D04 89GR.</td>
               </tr>
@@ -89,10 +88,8 @@
           </div>
         </div>
         <div class="col-sm-8">
-          <div class="content-box">
-            <h2>Miscellaneous Info</h2>
-          </div>
-          <div class="content-border-box">
+          <h2>Miscellaneous Info</h2>
+          <div class="content-box wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error.</p>
           </div>
@@ -105,13 +102,13 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-8">
-          <div class="content-box">
+          <div class="footer-box">
             <h4>Toll Free: <span>1-800 123 45 67</span></h4>
             <p><a href="#">Website Template</a> by TemplateMonster.com</p>
           </div>
         </div>
         <div class="col-xs-4">
-          <div class="content-box">
+          <div class="footer-box">
             <h4>Follow Us</h4>
             <ul>
               <li><a href="#">facebook</a></li>
@@ -128,5 +125,7 @@
 
   <script src="javascripts/jquery-1.11.3.min.js"></script>
   <script src="javascripts/bootstrap.min.js"></script>
+  <script src="javascripts/wow.js"></script>
+  <script src="javascripts/app.js"></script>
 </body>
 </html>
