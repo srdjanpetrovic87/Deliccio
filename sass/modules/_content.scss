@@ -1,22 +1,20 @@
 .content-convincer {
-  padding: 20px;
+  padding: 20px 0;
   background: $gray-light;
   color: $red-darker;
 
   h2 {
     padding: 0 0 0 30px;
   }
+
   .content-box {
-    padding: 0 45px;
-    margin: 0 -15px;
+    padding: 0 30px;
+    margin: 0 0 30px 0;
   }
-  .separator {
-    border-right: 1px solid #e1dad5;
-  }
-  
+
   .event-box {
     @include clearfix();
-    margin: 0 -30px 40px 0;
+    margin: 0 0 40px 0;
     img {
       float: left;
     }
@@ -88,7 +86,6 @@
   
   .cook-recipe-box {
     @include clearfix();
-    padding: 10px 0 0 0;
     margin: 0 0 10px 0;
     img {
       float: left;
@@ -112,4 +109,50 @@
     }
   }
 
+}
+
+@media screen and (min-width: 992px) {
+  .content-convincer {
+    .content-box {
+      padding: 0 45px;
+      margin: 0 -15px;
+    }
+    .separator {
+      border-right: 1px solid #e1dad5;
+    }
+    .event-box {
+      margin: 0 -30px 40px 0;
+    }
+    .cook-recipe-box {
+      padding: 10px 0 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .content-convincer {
+    .offer-box {
+      @include clearfix();
+      img {
+        float: left;
+        margin: 0 20px 0 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .content-convincer {
+    .cook-recipe-box {
+      img {
+        float: none;
+        margin: 0 0 15px 0;
+      }
+      h6 {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
 }

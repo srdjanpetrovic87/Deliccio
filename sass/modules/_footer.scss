@@ -1,12 +1,9 @@
 .footer {
   padding: 30px 0;
   background: url("../images/bg_bot.jpg");
-
   .footer-box {
-    padding: 0 45px;
-    margin: 0 -15px;
+    padding: 0 30px;
   }
-
   p {
     color: #696969;
     a {
@@ -68,6 +65,14 @@
           background-position: -160px -31px;
         }
       }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    .footer-box {
+      padding: 0 45px;
+      margin: 0 -15px;
     }
   }
 }

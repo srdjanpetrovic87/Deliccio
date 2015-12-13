@@ -7,6 +7,7 @@
   -webkit-box-shadow: 0px 20px 16px -16px rgba(0,0,0,0.65);
   -moz-box-shadow: 0px 20px 16px -16px rgba(0,0,0,0.65);
   box-shadow: 0px 20px 16px -16px rgba(0,0,0,0.65);
+  position: relative;
 }
 .intro-carousel-description {
   width: 34%;
@@ -41,4 +42,61 @@
 .intro-carousel-image {
   width: 66%;
   float: left;
+}
+@media screen and(max-width: 991px) {
+  .intro-carousel {
+    margin: 0 0 25px 0;
+  }
+  .intro-carousel-description {
+    width: 40%;
+    padding: 0 10px 0 0;
+    h1 {
+      font-size: 36px;
+      line-height: 36px;
+      letter-spacing: -1px;
+      margin: 0;
+      span {
+        font-size: 24px;
+        line-height: 36px;
+        margin: 0;
+      }
+    }
+  }
+  .intro-carousel-image {
+    width: 60%;
+  }
+}
+@media screen and (max-width:767px) {
+  .intro-carousel-description {
+    width: 50%;
+    padding: 0 10px 0 0;
+    h1 {
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: -1px;
+      margin: 0;
+      span {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+      }
+    }
+  }
+  .intro-carousel-image {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 660px) {
+  .intro-carousel-description {
+    width: 100%;
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba($gray-light, 0.5);
+  }
+  .intro-carousel-image {
+    width: 100%;
+    float: none;
+  }
 }

@@ -30,3 +30,22 @@
     font-style: italic;
   }
 }
+@media screen and (max-width: 991px) {
+  .intro-box {
+    @include clearfix();
+    margin: 0 0 20px 0;
+    img {
+      float: right;
+      margin: 0 0 0 20px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .intro-box {
+    img {
+      float: none;
+      margin: 0 0 15px 0;
+      width: 100%;
+    }
+  }
+}
