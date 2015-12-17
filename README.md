@@ -1,5 +1,5 @@
-#Deliccio 
+#Deliccio Restaurant
 
-## The purpose of this project is practice to code from psd template
+<p>The purpose of this project is practice.</p>
 
-## Techologies used are: HTML5, CSS3, SASS, jQuery and Bootstrap
+<p>Techologies used: HTML5, CSS3, SASS, Bootstrap and jQuery</p>

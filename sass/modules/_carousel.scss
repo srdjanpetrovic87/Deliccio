@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   padding: 10px;
-  background: url("../images/slider-bgnd.jpg") no-repeat 0 0;
+  background: url("../images/slider-bgnd.jpg") repeat 0 0;
   margin: 0 0 35px 0;
   -webkit-box-shadow: 0px 20px 16px -16px rgba(0,0,0,0.65);
   -moz-box-shadow: 0px 20px 16px -16px rgba(0,0,0,0.65);
@@ -12,6 +12,7 @@
 .intro-carousel-description {
   width: 34%;
   float: left;
+  padding-right: 10px;
   blockquote {
     font-family: $georgia;
     font-size: 14px;
@@ -22,21 +23,23 @@
     border: 0;
     margin: 0;
     position: relative;
-  }
-  blockquote:before {
-    content: open-quote;
-    font-size: 44px;
-    position: absolute;
-    top: 5px;
-    left: 20px;
-  }
-  blockquote:after {
-    content: close-quote;
-    font-size: 44px;
-    margin-top: 20px;
-    position: absolute;
-    right: 20px;
-    bottom: -15px;
+    span {
+      display: inline-block;
+      text-indent: -9999em;
+      width: 21px;
+      height: 16px;
+      position: absolute;
+      &:first-child {
+        top: 0;
+        left: 0;
+        background: url("../images/quote-left.png") no-repeat 0 0;
+      }
+      &:last-child {
+        bottom: 0;
+        right: 0;
+        background: url("../images/quote-right.png") no-repeat 0 0;
+      }
+    }
   }
 }
 .intro-carousel-image {
@@ -49,12 +52,10 @@
   }
   .intro-carousel-description {
     width: 40%;
-    padding: 0 10px 0 0;
     h1 {
       font-size: 36px;
       line-height: 36px;
       letter-spacing: -1px;
-      margin: 0;
       span {
         font-size: 24px;
         line-height: 36px;
@@ -66,6 +67,22 @@
     width: 60%;
   }
 }
+
+@media screen and (max-width: 860px) {
+  .intro-carousel-description {
+    h1 {
+      font-size: 28px;
+      line-height: 28px;
+      letter-spacing: -1px;
+      margin: 40px 0 10px 0;
+      span {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width:767px) {
   .intro-carousel-description {
     width: 50%;
@@ -73,11 +90,12 @@
     h1 {
       font-size: 24px;
       line-height: 24px;
-      letter-spacing: -1px;
+      letter-spacing: 0;
       margin: 0;
       span {
         font-size: 16px;
         line-height: 24px;
+        letter-spacing: 0;
         margin: 0;
       }
     }
@@ -86,14 +104,14 @@
     width: 50%;
   }
 }
+
 @media screen and (max-width: 660px) {
   .intro-carousel-description {
     width: 100%;
     float: none;
-    position: absolute;
-    top: 0;
-    left: 0;
+    padding: none;
     background: rgba($gray-light, 0.5);
+    margin: 0 0 10px 0;
   }
   .intro-carousel-image {
     width: 100%;

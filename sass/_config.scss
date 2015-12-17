@@ -4,16 +4,15 @@ body {
   line-height: 24px;
   font-weight: normal;
 }
-.container-fluid {
-  max-width: 990px;
-}
 .top-convincer-wrap {
   background: $red;
 }
 .top-convincer {
   color: $gray-lighter;
 }
-
+.container-fluid {
+  max-width: 990px;
+}
 @media screen and (min-width: 992px) {
   .top-convincer-wrap {
     background: url("../images/header-bgnd-repeat.jpg") repeat 0 0;
