@@ -29,6 +29,51 @@
     color: $gray-light;
     font-style: italic;
   }
+  .contact-form {
+    .form-horizontal {
+      .form-group {
+        margin-bottom: 3px;
+        &:last-child {
+          margin-bottom: 10px;
+          margin-top: 15px;
+        }
+      }
+      .control-label {
+        text-align: left;
+        color: $gray-light;
+        padding: 0 5px 0 15px;
+        font-weight: normal;
+      }
+      .form-control {
+        background: $gray-light;
+        border: none;
+        border-radius: 0;
+        color: $gray-dark;
+        height: auto;
+        padding: 0 10px;
+        line-height: 22px;
+      }
+      button {
+        border: none;
+        display: block;
+        float: right;
+        width: 80px;
+        height: 35px;
+        font-family: $georgia;
+        font-size: 20px;
+        text-align: center;
+        line-height: 35px;
+        background: $red;
+        color: $gray-light;
+        text-decoration: none;
+        margin: 0 0 0 20px;
+        &:hover,
+        &:focus {
+          background: $red-light;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 991px) {
   .intro-box {

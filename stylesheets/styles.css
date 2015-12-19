@@ -8883,9 +8883,9 @@ p {
 
 /* line 56, ../sass/_typography.scss */
 a.read-more {
-  display: block;
-  width: 135px;
+  display: inline-block;
   height: 35px;
+  padding: 0 18px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
   text-align: center;
@@ -8897,25 +8897,6 @@ a.read-more {
 }
 /* line 68, ../sass/_typography.scss */
 a.read-more:hover, a.read-more:focus {
-  background: #bf0f0a;
-}
-
-/* line 73, ../sass/_typography.scss */
-a.proposal {
-  display: block;
-  width: 170px;
-  height: 35px;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 20px;
-  text-align: center;
-  line-height: 35px;
-  background: #a80002;
-  color: #faf3ed;
-  text-decoration: none;
-  margin: 0 0 10px 0;
-}
-/* line 85, ../sass/_typography.scss */
-a.proposal:hover, a.proposal:focus {
   background: #bf0f0a;
 }
 
@@ -9288,9 +9269,55 @@ a.proposal:hover, a.proposal:focus {
   color: #faf3ed;
   font-style: italic;
 }
+/* line 34, ../sass/modules/_intro-box.scss */
+.intro-box .contact-form .form-horizontal .form-group {
+  margin-bottom: 3px;
+}
+/* line 36, ../sass/modules/_intro-box.scss */
+.intro-box .contact-form .form-horizontal .form-group:last-child {
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+/* line 41, ../sass/modules/_intro-box.scss */
+.intro-box .contact-form .form-horizontal .control-label {
+  text-align: left;
+  color: #faf3ed;
+  padding: 0 5px 0 15px;
+  font-weight: normal;
+}
+/* line 47, ../sass/modules/_intro-box.scss */
+.intro-box .contact-form .form-horizontal .form-control {
+  background: #faf3ed;
+  border: none;
+  border-radius: 0;
+  color: #6c5f5b;
+  height: auto;
+  padding: 0 10px;
+  line-height: 22px;
+}
+/* line 56, ../sass/modules/_intro-box.scss */
+.intro-box .contact-form .form-horizontal button {
+  border: none;
+  display: block;
+  float: right;
+  width: 80px;
+  height: 35px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+  background: #a80002;
+  color: #faf3ed;
+  text-decoration: none;
+  margin: 0 0 0 20px;
+}
+/* line 70, ../sass/modules/_intro-box.scss */
+.intro-box .contact-form .form-horizontal button:hover, .intro-box .contact-form .form-horizontal button:focus {
+  background: #bf0f0a;
+}
 
 @media screen and (max-width: 991px) {
-  /* line 34, ../sass/modules/_intro-box.scss */
+  /* line 79, ../sass/modules/_intro-box.scss */
   .intro-box {
     margin: 0 0 20px 0;
   }
@@ -9303,14 +9330,14 @@ a.proposal:hover, a.proposal:focus {
   .intro-box:after {
     clear: both;
   }
-  /* line 37, ../sass/modules/_intro-box.scss */
+  /* line 82, ../sass/modules/_intro-box.scss */
   .intro-box img {
     float: right;
     margin: 0 0 0 20px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 45, ../sass/modules/_intro-box.scss */
+  /* line 90, ../sass/modules/_intro-box.scss */
   .intro-box img {
     float: none;
     margin: 0 0 15px 0;
